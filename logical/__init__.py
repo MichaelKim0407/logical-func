@@ -2,6 +2,8 @@ from ._base import (
     BaseFunction as _BaseFunction,
 )
 
+__version__ = '1.0'
+
 
 class Function(_BaseFunction):
     def __init__(self, func):
