@@ -47,3 +47,11 @@ class OrFunction(BaseFunction):
 
     def __call__(self, *args, **kwargs):
         return self.__a(*args, **kwargs) or self.__b(*args, **kwargs)
+
+
+class Function(BaseFunction):
+    def __init__(self, func):
+        self.__func = func
+
+    def __call__(self, *args, **kwargs):
+        return self.__func(*args, **kwargs)

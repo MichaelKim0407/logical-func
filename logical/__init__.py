@@ -1,13 +1,7 @@
-from ._base import (
-    BaseFunction as _BaseFunction,
-)
+try:
+    from ._base import Function
+except ImportError:  # pragma: no cover
+    # setup.py imports __version__, at which point dependencies in _base may not be installed
+    pass
 
 __version__ = '1.0'
-
-
-class Function(_BaseFunction):
-    def __init__(self, func):
-        self.__func = func
-
-    def __call__(self, *args, **kwargs):
-        return self.__func(*args, **kwargs)
