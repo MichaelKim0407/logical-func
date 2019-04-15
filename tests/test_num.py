@@ -1,6 +1,16 @@
 from logical.num import *
 
 
+def test_integer():
+    assert is_integer(1)
+    assert is_integer(1.0)
+    assert not is_integer(1.1)
+
+    assert not is_not_integer(1)
+    assert not is_not_integer(1.0)
+    assert is_not_integer(1.1)
+
+
 def test_div():
     div3 = DivBy(3)
     assert [
@@ -19,9 +29,3 @@ def test_even_odd():
                is_odd(x)
                for x in range(10)
            ] == [False, True] * 5
-
-
-def test_integer():
-    assert is_integer(1)
-    assert is_integer(1.0)
-    assert not is_integer(1.1)
