@@ -55,3 +55,9 @@ class Function(BaseFunction):
 
     def __call__(self, *args, **kwargs):
         return self.__func(*args, **kwargs)
+
+    @staticmethod
+    def get(func):
+        if isinstance(func, BaseFunction):
+            return func
+        return Function(func)

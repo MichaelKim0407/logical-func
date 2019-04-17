@@ -67,3 +67,10 @@ def test_or():
                True, True, False,
                True, False, False,
            ]
+
+
+def test_get():
+    div3_new = Function.get(lambda x: x % 3 == 0)
+    assert isinstance(div3_new, Function)
+    div3_get = Function.get(div3)
+    assert div3_get is div3

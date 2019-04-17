@@ -1,4 +1,4 @@
-from logical.typing import *
+from logical.types import *
 
 
 def test_isinstance():
