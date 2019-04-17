@@ -2,7 +2,7 @@ from ._base import (
     BaseFunction as _BaseFunction,
     Function as _Function,
 )
-from .typing import (
+from .types import (
     is_int as _is_int,
 )
 
