@@ -36,6 +36,7 @@ and instances are boolean-callables.
 `logical` module
 
 * `class Function`: Wrap a bool-returning function.
+    * `Function.get(func)`: if `func` is already a function, return itself; otherwise call class constructor.
 
 `logical.typing` module
 
