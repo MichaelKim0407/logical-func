@@ -4,4 +4,4 @@ except ImportError:  # pragma: no cover
     # setup.py imports __version__, at which point dependencies in _base may not be installed
     pass
 
-__version__ = '1.1'
+__version__ = '1.2'

@@ -76,4 +76,9 @@ and instances are boolean-callables.
 * `class GreaterThanOrEqual`
 * `class LessThanOrEqual`
 
+`logical.collection` module
+
+* `class In`: used on an item, returns whether the item is in a collection.
+* `class Contains`: used on a collection, returns whether the collection contains an item.
+
 See [tests](tests/) for usage examples.
